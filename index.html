@@ -29,7 +29,7 @@
       margin: auto;
     }
     
-    .form-signin .form-control {
+    .form-signin .input-group {
       position: relative;
       box-sizing: border-box;
       height: auto;
@@ -48,8 +48,13 @@
   <form class="form-signin">
     <img class="mb-4" src="https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/whatsapp-256.png" alt="" width="72" height="72">
     <h1 class="h3 mb-3 font-weight-normal">WhatsApp</h1>
-    <label for="inputEmail" class="sr-only">Número de teléfono</label>
-    <input type="number" id="inputEmail" class="form-control mb-3" inputmode="numeric" pattern="[0-9]*" placeholder="Número de teléfono" required autofocus>
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="">+34</span>
+      </div>
+      <input type="number" id="inputEmail" class="form-control" inputmode="numeric" pattern="[0-9]*" placeholder="Número de teléfono" required autofocus>
+      <label for="inputEmail" class="sr-only">Número de teléfono</label>
+    </div>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Conectar</button>
     <p class="mt-5 mb-3 text-muted">&copy; 2018 by Eloy Pérez</p>
   </form>
